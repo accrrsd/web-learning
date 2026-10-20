@@ -1,0 +1,18 @@
+.page {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.contentWrapper {
+  margin-top: 100vh;
+}
+.content {
+  display: grid;
+  grid-template:
+    'leftSide tabs rightSide'
+    'leftSide content rightSide';
+}
+.test {
+  background-color: #171b36;
+  color: white;
+  grid-area: content;
+}

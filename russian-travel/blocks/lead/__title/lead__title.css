@@ -1,0 +1,60 @@
+.lead__title {
+  margin: 0;
+  padding: 0;
+  
+  max-width: 720px;
+  margin: 0 auto;
+
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 104%;
+  text-align: center;
+}
+
+/* ? Чтобы сделать адаптивный текст между брейкпоинтами, вынужден менять правила вот так. */
+/* calc (minSize + ((layoutSize - minSize) * (100vw / 1280))); */
+
+/* Адаптив */
+/* @media screen and (max-width: 1200px){
+  .lead__title{
+    font-size: calc(40px + ((94 - 40) * (100vw / 1280)));
+  }
+} */
+
+/* Адаптив */
+@media screen and (max-width: 1000px){
+  .lead__title{
+    font-size: calc(40px + ((94 - 40) * (100vw / 1280)));
+  }
+}
+
+/* Макет */
+@media screen and (max-width: 768px) {
+  .lead__title{
+    font-size: 96px;
+  }
+}
+
+/* Адаптив */
+@media screen and (max-width: 700px){
+  .lead__title{
+    font-size: calc(40px + ((94 - 40) * (100vw / 1280)));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lead__title{
+    font-size: 45px;
+  }
+  
+}
+/* Макет */
+@media screen and (max-width: 320px) {
+  .lead__title {
+    max-width: 288px;
+    font-size: 40px;
+    line-height: 110%;
+  }
+}

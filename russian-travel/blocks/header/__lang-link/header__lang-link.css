@@ -1,0 +1,21 @@
+.header__lang-link {
+  margin: 0;
+  padding: 0;
+  
+  max-width: 30px;
+  /* max-height: 28px; */
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 117%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 111%;
+    max-width: 22px;
+  }
+}

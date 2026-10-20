@@ -1,0 +1,11 @@
+.feynman__link{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #2f80ed;
+}

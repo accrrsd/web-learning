@@ -1,0 +1,56 @@
+.menuWrapper {
+  display: flex;
+  grid-area: tabs;
+  gap: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.item {
+  font-size: 25px;
+  position: relative;
+  height: 40px;
+  border-radius: 0 20px 0 0;
+  user-select: none;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -2;
+  background-color: rgba(23, 27, 54, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.item:hover:before {
+  opacity: 1;
+}
+
+.item:first-of-type::before {
+  border-radius: 0 20px 0 0;
+}
+.item::before {
+  border-radius: 20px 20px 0 0;
+}
+.item:last-of-type::before {
+  border-radius: 20px 0 0 0;
+}
+
+.active {
+  background-color: #171b36;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -2;
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+}

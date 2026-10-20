@@ -1,0 +1,174 @@
+/* Текст картинки */
+.title {
+  font-size: 88px;
+  text-align: center;
+  color: white;
+  user-select: none;
+}
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  user-select: none;
+  align-self: flex-end;
+}
+/* Картинка */
+.title__image {
+  background-image: url('../../images/clear\ background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1000;
+
+  opacity: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Затемнение */
+.title__image_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -990;
+  background-color: black;
+}
+
+.title__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ship {
+  position: fixed;
+  z-index: -991;
+}
+.firstPlanet {
+  position: fixed;
+  z-index: -992;
+}
+.secondPlanet {
+  position: fixed;
+  z-index: -993;
+}
+.thirdPlanet {
+  position: fixed;
+  z-index: -994;
+}
+
+@media screen and (max-width: 3440px) {
+  .ship {
+    top: 50vh;
+    left: 15vw;
+  }
+  .firstPlanet {
+    max-height: 200vh;
+    top: -30vh;
+    left: -100px;
+  }
+
+  .secondPlanet {
+    bottom: 30vh;
+    right: 10vw;
+  }
+  .thirdPlanet {
+    bottom: 20vh;
+    right: 30vw;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .ship {
+    max-width: 28vw;
+    top: 60vh;
+    left: 20vw;
+  }
+  .firstPlanet {
+    max-height: 150vh;
+    top: -35vh;
+    left: -100px;
+  }
+
+  .secondPlanet {
+    bottom: 250px;
+    right: 100px;
+  }
+  .thirdPlanet {
+    max-width: 70px;
+    bottom: 170px;
+    right: 700px;
+  }
+}
+
+@media screen and (max-width: 2200px) {
+  .ship {
+    max-width: 40vw;
+    top: 50vh;
+    left: 10vw;
+  }
+  .firstPlanet {
+    max-height: 100vh;
+    top: 1vh;
+    left: -100px;
+  }
+
+  .secondPlanet {
+    max-width: 10vw;
+    bottom: 30vh;
+  }
+  .thirdPlanet {
+    right: 25vw;
+    bottom: 15vw;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .ship {
+    max-width: 40vw;
+    top: 50vh;
+    left: 10vw;
+  }
+  .firstPlanet {
+    max-height: 80vh;
+    top: 5vh;
+    left: -100px;
+  }
+
+  .secondPlanet {
+    max-width: 10vw;
+    bottom: 30vh;
+  }
+  .thirdPlanet {
+    right: 25vw;
+    bottom: 15vw;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .ship {
+    max-width: 50%;
+    top: 50vh;
+    left: 20vw;
+  }
+  .firstPlanet {
+    max-width: 100%;
+    top: 10vh;
+    left: 1vw;
+  }
+
+  .secondPlanet {
+    display: none;
+  }
+  .thirdPlanet {
+    display: none;
+  }
+}

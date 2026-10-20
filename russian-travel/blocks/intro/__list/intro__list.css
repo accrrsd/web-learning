@@ -1,0 +1,14 @@
+.intro__list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  margin-top: 33px;
+  padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .intro__list {
+    margin-top: 34px;
+  }
+}

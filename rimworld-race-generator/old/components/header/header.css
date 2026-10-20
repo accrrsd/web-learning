@@ -1,0 +1,41 @@
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  /* gap: 100px; */
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.linkImage {
+  height: 100px;
+}
+.linkName {
+  color: greenyellow;
+  font-size: 24px;
+  transition: color 0.2s ease;
+  transition: font-size 0.2s ease;
+}
+.linkWrapper:hover .linkName {
+  color: white;
+  font-size: 30px;
+}
+
+.pawnImage {
+  height: 70px;
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* 'https://i.imgur.com/kbVpzXM.png' */
+body {
+  height: 100vh;
+  position: relative;
+  /* background: linear-gradient(180deg, rgba(208, 31, 246, 1) 0%, rgba(3, 0, 59, 1) 80%); */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
